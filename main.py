@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 web_URL="https://appbrewery.github.io/Zillow-Clone/"
-google_form="https://docs.google.com/forms/d/e/1FAIpQLSexrc3y8TQFlUZ6C1OdaNFF1WoqM-ACr-HfaH8dUsgi4Cw9_g/viewform?usp=header"
+google_form="YOUR GOOGLE FORM LINK"
 
 response= requests.get(web_URL)
 
@@ -30,7 +30,7 @@ chrome_options=webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach",True)
 driver=webdriver.Chrome(options=chrome_options)
 
-for n in range(10):
+for n in range(len(all_links)):
 
         driver.get(google_form)
         time.sleep(2)
